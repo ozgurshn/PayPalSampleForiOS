@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E3495AB1C33294800F067F5 /* libPayPalMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E3495A31C33294800F067F5 /* libPayPalMobile.a */; };
+		2E3495AD1C3329AD00F067F5 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E3495AC1C3329AD00F067F5 /* Accelerate.framework */; };
+		2E3495B61C3329E700F067F5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E3495AE1C3329E700F067F5 /* AudioToolbox.framework */; };
+		2E3495B71C3329E700F067F5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E3495AF1C3329E700F067F5 /* AVFoundation.framework */; };
+		2E3495B81C3329E700F067F5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E3495B01C3329E700F067F5 /* CoreLocation.framework */; };
+		2E3495B91C3329E700F067F5 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E3495B11C3329E700F067F5 /* CoreMedia.framework */; };
+		2E3495BA1C3329E700F067F5 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E3495B21C3329E700F067F5 /* MessageUI.framework */; };
+		2E3495BB1C3329E700F067F5 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E3495B31C3329E700F067F5 /* MobileCoreServices.framework */; };
+		2E3495BC1C3329E700F067F5 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E3495B41C3329E700F067F5 /* SafariServices.framework */; };
+		2E3495BD1C3329E700F067F5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E3495B51C3329E700F067F5 /* SystemConfiguration.framework */; };
+		2E3495C31C332CA500F067F5 /* PaypalInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3495C21C332CA500F067F5 /* PaypalInterface.m */; };
+		2EE380BD1C2B436D00FD1780 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE380BC1C2B436D00FD1780 /* AppDelegate.swift */; };
+		2EE380BF1C2B436D00FD1780 /* CharityListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE380BE1C2B436D00FD1780 /* CharityListVC.swift */; };
+		2EE380C21C2B436D00FD1780 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EE380C01C2B436D00FD1780 /* Main.storyboard */; };
+		2EE380C41C2B436D00FD1780 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EE380C31C2B436D00FD1780 /* Assets.xcassets */; };
+		2EE380C71C2B436D00FD1780 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EE380C51C2B436D00FD1780 /* LaunchScreen.storyboard */; };
+		2EE4C9DC1C2B479E00301A3C /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE4C9DB1C2B479E00301A3C /* APIManager.swift */; };
+		2EE4C9DE1C2B499000301A3C /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE4C9DD1C2B499000301A3C /* SwiftyJSON.swift */; };
+		2EE4C9E11C2B50B500301A3C /* CharityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE4C9E01C2B50B500301A3C /* CharityModel.swift */; };
+		2EF488881C30637900034707 /* green.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EF488871C30637900034707 /* green.png */; };
+		2EF4888E1C30663C00034707 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EF4888D1C30663C00034707 /* circle.png */; };
+		2EF4889A1C30739C00034707 /* SimpleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF488991C30739C00034707 /* SimpleButton.swift */; };
+		2EF488A21C30754B00034707 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF488A11C30754B00034707 /* UIColorExtensions.swift */; };
+		2EF488A41C307AF100034707 /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EF488A31C307AF100034707 /* check.png */; };
+		2EF5B7501C31C0D30072E1FB /* DonationListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF5B74F1C31C0D30072E1FB /* DonationListVC.swift */; };
+		2EF5B7521C31C1470072E1FB /* DonationListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF5B7511C31C1470072E1FB /* DonationListCell.swift */; };
+		2EF5B7541C31C8D60072E1FB /* BlurryTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF5B7531C31C8D60072E1FB /* BlurryTableView.swift */; };
+		2EF5B7561C31CBCD0072E1FB /* dollar.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EF5B7551C31CBCD0072E1FB /* dollar.png */; };
+		2EF93AC11C2DEA6100D40D2F /* CharityListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF93AC01C2DEA6100D40D2F /* CharityListCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2E3495A31C33294800F067F5 /* libPayPalMobile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPayPalMobile.a; sourceTree = "<group>"; };
+		2E3495A41C33294800F067F5 /* PayPalConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalConfiguration.h; sourceTree = "<group>"; };
+		2E3495A51C33294800F067F5 /* PayPalFuturePaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalFuturePaymentViewController.h; sourceTree = "<group>"; };
+		2E3495A61C33294800F067F5 /* PayPalMobile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalMobile.h; sourceTree = "<group>"; };
+		2E3495A71C33294800F067F5 /* PayPalOAuthScopes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalOAuthScopes.h; sourceTree = "<group>"; };
+		2E3495A81C33294800F067F5 /* PayPalPayment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalPayment.h; sourceTree = "<group>"; };
+		2E3495A91C33294800F067F5 /* PayPalPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalPaymentViewController.h; sourceTree = "<group>"; };
+		2E3495AA1C33294800F067F5 /* PayPalProfileSharingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalProfileSharingViewController.h; sourceTree = "<group>"; };
+		2E3495AC1C3329AD00F067F5 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		2E3495AE1C3329E700F067F5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		2E3495AF1C3329E700F067F5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2E3495B01C3329E700F067F5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		2E3495B11C3329E700F067F5 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		2E3495B21C3329E700F067F5 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		2E3495B31C3329E700F067F5 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		2E3495B41C3329E700F067F5 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		2E3495B51C3329E700F067F5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		2E3495BE1C332C0100F067F5 /* Donate-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Donate-Bridging-Header.h"; sourceTree = "<group>"; };
+		2E3495C11C332CA500F067F5 /* PaypalInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaypalInterface.h; sourceTree = "<group>"; };
+		2E3495C21C332CA500F067F5 /* PaypalInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaypalInterface.m; sourceTree = "<group>"; };
+		2EE380B91C2B436D00FD1780 /* Donate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Donate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EE380BC1C2B436D00FD1780 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2EE380BE1C2B436D00FD1780 /* CharityListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharityListVC.swift; sourceTree = "<group>"; };
+		2EE380C11C2B436D00FD1780 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2EE380C31C2B436D00FD1780 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2EE380C61C2B436D00FD1780 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2EE380C81C2B436D00FD1780 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EE4C9DB1C2B479E00301A3C /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		2EE4C9DD1C2B499000301A3C /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		2EE4C9E01C2B50B500301A3C /* CharityModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharityModel.swift; sourceTree = "<group>"; };
+		2EF488871C30637900034707 /* green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green.png; sourceTree = "<group>"; };
+		2EF4888D1C30663C00034707 /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle.png; sourceTree = "<group>"; };
+		2EF488991C30739C00034707 /* SimpleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleButton.swift; sourceTree = "<group>"; };
+		2EF488A11C30754B00034707 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		2EF488A31C307AF100034707 /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
+		2EF5B74F1C31C0D30072E1FB /* DonationListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonationListVC.swift; sourceTree = "<group>"; };
+		2EF5B7511C31C1470072E1FB /* DonationListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonationListCell.swift; sourceTree = "<group>"; };
+		2EF5B7531C31C8D60072E1FB /* BlurryTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurryTableView.swift; sourceTree = "<group>"; };
+		2EF5B7551C31CBCD0072E1FB /* dollar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dollar.png; sourceTree = "<group>"; };
+		2EF93AC01C2DEA6100D40D2F /* CharityListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharityListCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2EE380B61C2B436D00FD1780 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E3495B61C3329E700F067F5 /* AudioToolbox.framework in Frameworks */,
+				2E3495B71C3329E700F067F5 /* AVFoundation.framework in Frameworks */,
+				2E3495B81C3329E700F067F5 /* CoreLocation.framework in Frameworks */,
+				2E3495B91C3329E700F067F5 /* CoreMedia.framework in Frameworks */,
+				2E3495BA1C3329E700F067F5 /* MessageUI.framework in Frameworks */,
+				2E3495BB1C3329E700F067F5 /* MobileCoreServices.framework in Frameworks */,
+				2E3495BC1C3329E700F067F5 /* SafariServices.framework in Frameworks */,
+				2E3495BD1C3329E700F067F5 /* SystemConfiguration.framework in Frameworks */,
+				2E3495AD1C3329AD00F067F5 /* Accelerate.framework in Frameworks */,
+				2E3495AB1C33294800F067F5 /* libPayPalMobile.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E3495A11C33292C00F067F5 /* PayPal */ = {
+			isa = PBXGroup;
+			children = (
+				2E3495C11C332CA500F067F5 /* PaypalInterface.h */,
+				2E3495C21C332CA500F067F5 /* PaypalInterface.m */,
+				2E3495A21C33294800F067F5 /* PayPalMobile */,
+			);
+			name = PayPal;
+			sourceTree = "<group>";
+		};
+		2E3495A21C33294800F067F5 /* PayPalMobile */ = {
+			isa = PBXGroup;
+			children = (
+				2E3495A31C33294800F067F5 /* libPayPalMobile.a */,
+				2E3495A41C33294800F067F5 /* PayPalConfiguration.h */,
+				2E3495A51C33294800F067F5 /* PayPalFuturePaymentViewController.h */,
+				2E3495A61C33294800F067F5 /* PayPalMobile.h */,
+				2E3495A71C33294800F067F5 /* PayPalOAuthScopes.h */,
+				2E3495A81C33294800F067F5 /* PayPalPayment.h */,
+				2E3495A91C33294800F067F5 /* PayPalPaymentViewController.h */,
+				2E3495AA1C33294800F067F5 /* PayPalProfileSharingViewController.h */,
+			);
+			path = PayPalMobile;
+			sourceTree = "<group>";
+		};
+		2E3495C61C332EA800F067F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E3495AE1C3329E700F067F5 /* AudioToolbox.framework */,
+				2E3495AF1C3329E700F067F5 /* AVFoundation.framework */,
+				2E3495B01C3329E700F067F5 /* CoreLocation.framework */,
+				2E3495B11C3329E700F067F5 /* CoreMedia.framework */,
+				2E3495B21C3329E700F067F5 /* MessageUI.framework */,
+				2E3495B31C3329E700F067F5 /* MobileCoreServices.framework */,
+				2E3495B41C3329E700F067F5 /* SafariServices.framework */,
+				2E3495B51C3329E700F067F5 /* SystemConfiguration.framework */,
+				2E3495AC1C3329AD00F067F5 /* Accelerate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2EE380B01C2B436D00FD1780 = {
+			isa = PBXGroup;
+			children = (
+				2E3495C61C332EA800F067F5 /* Frameworks */,
+				2EE380BB1C2B436D00FD1780 /* Donate */,
+				2EE380BA1C2B436D00FD1780 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2EE380BA1C2B436D00FD1780 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2EE380B91C2B436D00FD1780 /* Donate.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2EE380BB1C2B436D00FD1780 /* Donate */ = {
+			isa = PBXGroup;
+			children = (
+				2EF93ACA1C2E0DA000D40D2F /* Views */,
+				2EF93ACC1C2E0DCD00D40D2F /* Models */,
+				2EF93ACB1C2E0DA600D40D2F /* API */,
+				2EF93ACE1C2E0E0600D40D2F /* Images */,
+				2E3495A11C33292C00F067F5 /* PayPal */,
+				2EF93ACD1C2E0DE000D40D2F /* Library */,
+				2EE380BC1C2B436D00FD1780 /* AppDelegate.swift */,
+				2E3495BE1C332C0100F067F5 /* Donate-Bridging-Header.h */,
+				2EE380C31C2B436D00FD1780 /* Assets.xcassets */,
+				2EE380C51C2B436D00FD1780 /* LaunchScreen.storyboard */,
+				2EE380C81C2B436D00FD1780 /* Info.plist */,
+			);
+			path = Donate;
+			sourceTree = "<group>";
+		};
+		2EF93ACA1C2E0DA000D40D2F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2EE380C01C2B436D00FD1780 /* Main.storyboard */,
+				2EE380BE1C2B436D00FD1780 /* CharityListVC.swift */,
+				2EF93AC01C2DEA6100D40D2F /* CharityListCell.swift */,
+				2EF5B74F1C31C0D30072E1FB /* DonationListVC.swift */,
+				2EF5B7511C31C1470072E1FB /* DonationListCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		2EF93ACB1C2E0DA600D40D2F /* API */ = {
+			isa = PBXGroup;
+			children = (
+				2EE4C9DB1C2B479E00301A3C /* APIManager.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		2EF93ACC1C2E0DCD00D40D2F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2EE4C9E01C2B50B500301A3C /* CharityModel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		2EF93ACD1C2E0DE000D40D2F /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				2EF488A11C30754B00034707 /* UIColorExtensions.swift */,
+				2EF488991C30739C00034707 /* SimpleButton.swift */,
+				2EE4C9DD1C2B499000301A3C /* SwiftyJSON.swift */,
+				2EF5B7531C31C8D60072E1FB /* BlurryTableView.swift */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		2EF93ACE1C2E0E0600D40D2F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2EF5B7551C31CBCD0072E1FB /* dollar.png */,
+				2EF488A31C307AF100034707 /* check.png */,
+				2EF488871C30637900034707 /* green.png */,
+				2EF4888D1C30663C00034707 /* circle.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2EE380B81C2B436D00FD1780 /* Donate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EE380CB1C2B436D00FD1780 /* Build configuration list for PBXNativeTarget "Donate" */;
+			buildPhases = (
+				2EE380B51C2B436D00FD1780 /* Sources */,
+				2EE380B61C2B436D00FD1780 /* Frameworks */,
+				2EE380B71C2B436D00FD1780 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Donate;
+			productName = Donate;
+			productReference = 2EE380B91C2B436D00FD1780 /* Donate.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2EE380B11C2B436D00FD1780 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = ozgur;
+				TargetAttributes = {
+					2EE380B81C2B436D00FD1780 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 2EE380B41C2B436D00FD1780 /* Build configuration list for PBXProject "Donate" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2EE380B01C2B436D00FD1780;
+			productRefGroup = 2EE380BA1C2B436D00FD1780 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2EE380B81C2B436D00FD1780 /* Donate */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2EE380B71C2B436D00FD1780 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EE380C71C2B436D00FD1780 /* LaunchScreen.storyboard in Resources */,
+				2EF488A41C307AF100034707 /* check.png in Resources */,
+				2EF5B7561C31CBCD0072E1FB /* dollar.png in Resources */,
+				2EF488881C30637900034707 /* green.png in Resources */,
+				2EF4888E1C30663C00034707 /* circle.png in Resources */,
+				2EE380C41C2B436D00FD1780 /* Assets.xcassets in Resources */,
+				2EE380C21C2B436D00FD1780 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2EE380B51C2B436D00FD1780 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EE380BF1C2B436D00FD1780 /* CharityListVC.swift in Sources */,
+				2EF93AC11C2DEA6100D40D2F /* CharityListCell.swift in Sources */,
+				2E3495C31C332CA500F067F5 /* PaypalInterface.m in Sources */,
+				2EF5B7541C31C8D60072E1FB /* BlurryTableView.swift in Sources */,
+				2EF5B7501C31C0D30072E1FB /* DonationListVC.swift in Sources */,
+				2EE380BD1C2B436D00FD1780 /* AppDelegate.swift in Sources */,
+				2EF488A21C30754B00034707 /* UIColorExtensions.swift in Sources */,
+				2EF5B7521C31C1470072E1FB /* DonationListCell.swift in Sources */,
+				2EF4889A1C30739C00034707 /* SimpleButton.swift in Sources */,
+				2EE4C9DC1C2B479E00301A3C /* APIManager.swift in Sources */,
+				2EE4C9E11C2B50B500301A3C /* CharityModel.swift in Sources */,
+				2EE4C9DE1C2B499000301A3C /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2EE380C01C2B436D00FD1780 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2EE380C11C2B436D00FD1780 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2EE380C51C2B436D00FD1780 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2EE380C61C2B436D00FD1780 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2EE380C91C2B436D00FD1780 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2EE380CA1C2B436D00FD1780 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2EE380CC1C2B436D00FD1780 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Donate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Donate/PayPalMobile",
+				);
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ozgur.Donate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Donate/Donate-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		2EE380CD1C2B436D00FD1780 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Donate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Donate/PayPalMobile",
+				);
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ozgur.Donate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Donate/Donate-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2EE380B41C2B436D00FD1780 /* Build configuration list for PBXProject "Donate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EE380C91C2B436D00FD1780 /* Debug */,
+				2EE380CA1C2B436D00FD1780 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EE380CB1C2B436D00FD1780 /* Build configuration list for PBXNativeTarget "Donate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EE380CC1C2B436D00FD1780 /* Debug */,
+				2EE380CD1C2B436D00FD1780 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2EE380B11C2B436D00FD1780 /* Project object */;
+}
